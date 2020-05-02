@@ -1,0 +1,31 @@
+.container {
+margin: 50px 0;
+}
+
+.card {
+margin: 0 2% !important;
+font-weight: bold !important;;
+}
+
+.infected {
+background-color: rgba(66,139,202, 0.5) !important;
+color: whitesmoke !important;
+font-weight: bold !important;;
+
+}
+.recovered {
+background-color: rgba(92,184,92, 0.5) !important;
+color: whitesmoke !important;
+font-weight: bold !important;;
+
+}
+
+.deaths {
+background-color: rgba(217,83,79, 0.5) !important;
+color: whitesmoke !important;
+    
+}
+
+ div.MuiTypography-root {
+font-weight: bold !important;
+}
