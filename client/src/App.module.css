@@ -9,6 +9,12 @@ justify-content: center;
 flex-direction: column;
 }
 
+div.MuiFormControl-root {
+    background-color: #262626 !important;
+    border-radius: 10px !important;
+
+}
+
 .image {
     width: 370px;
     margin-top: 50px;

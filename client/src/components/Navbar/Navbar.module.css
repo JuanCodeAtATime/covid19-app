@@ -1,0 +1,17 @@
+.navbar {
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #262626 !important;
+}
+
+.navLogo {
+    font-size: 1.5rem;
+    color: whitesmoke !important;
+}
+
+.fontAI {
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
