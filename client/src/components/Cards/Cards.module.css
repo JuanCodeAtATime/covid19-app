@@ -8,24 +8,31 @@ font-weight: bold !important;;
 }
 
 .infected {
-background-color: rgba(66,139,202, 0.5) !important;
+border-bottom: solid 10px blue !important;
+background-color: #262626 !important;
 color: whitesmoke !important;
 font-weight: bold !important;;
 
 }
 .recovered {
-background-color: rgba(92,184,92, 0.5) !important;
+border-bottom: solid 10px green !important;
+background-color: #262626 !important;
 color: whitesmoke !important;
 font-weight: bold !important;;
 
 }
 
 .deaths {
-background-color: rgba(217,83,79, 0.5) !important;
-color: whitesmoke !important;
-    
+border-bottom: solid 10px red !important;
+background-color: #262626 !important;
+color: whitesmoke !important;    
 }
 
- div.MuiTypography-root {
-font-weight: bold !important;
+
+
+@media (max-width: 770px){
+    .card {
+        margin: 2% 0 !important;
+    }
+    
 }
