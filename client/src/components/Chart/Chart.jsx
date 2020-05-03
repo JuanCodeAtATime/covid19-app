@@ -41,10 +41,12 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
             ? (
 
                 <Bar
+                    style={{ color: "white" }}
                     data={{
                         labels: ['Infected', 'Recovered', 'Deaths'],
                         datasets: [{
                             label: 'People',
+                            color: 'whitesmoke',
                             backgroundColor: [
                                 'rgba(66,139,202, 0.65)',
                                 'rgba(92,184,92, 0.65)',

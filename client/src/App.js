@@ -9,8 +9,7 @@ import ChartsPage from './pages/ChartsPage/ChartsPage';
 
 class App extends React.Component {
     state = {
-        data: {},
-        country: '',
+        data: {}
     }
 
     async componentDidMount() {
@@ -18,15 +17,15 @@ class App extends React.Component {
         this.setState({ data: fetchedData })
     }
 
-    handleCountryChange = async (country) => {
-        const fetchedData = await fetchData(country)
-        this.setState({ data: fetchedData, country: country });
-    }
+    // handleCountryChange = async (country) => {
+    //     const fetchedData = await fetchData(country)
+    //     this.setState({ data: fetchedData, country: country });
+    // }
 
 
 
     render() {
-        const { data, country } = this.state;
+        const { data } = this.state;
         return (
             <div>
                 <Router>
@@ -34,7 +33,7 @@ class App extends React.Component {
                     <Switch>
                         <Route path="/chartspage" component={ChartsPage} />
                         <div className={styles.container}>
-                            <CountryPicker handleCountryChange={this.handleCountryChange} />
+                            {/* <CountryPicker handleCountryChange={this.handleCountryChange} /> */}
                             <Cards data={data} />
 
                         </div>

@@ -21,20 +21,20 @@ const NavBar = (props) => {
                     <Nav navbar>
                         <NavItem>
                             <Link to="/" style={{ color: "whitesmoke" }} className={styles.navItems}>
-                                <FontAwesomeIcon icon={faHome} />{'  '}
+                                <FontAwesomeIcon icon={faHome} /> {'\u00A0'}{' '}
                                 Home</Link>
                         </NavItem>
                         <NavItem>
                             <Link to="/chartspage" style={{ color: "whitesmoke" }} className={styles.navItems}>
-                                <FontAwesomeIcon icon={faChartBar} />{'  '}{' '}
-                                By Country</Link>
+                                <FontAwesomeIcon icon={faChartBar} /> {'\u00A0'}{' '}
+                                Data By Country</Link>
                         </NavItem>
                         <NavItem>
                             <Link
                                 className={styles.navItems}
                                 href="https://github.com/reactstrap/reactstrap"
                                 style={{ color: "whitesmoke" }}>
-                                <FontAwesomeIcon icon={faLaptopCode} />{' '}
+                                <FontAwesomeIcon icon={faLaptopCode} />  {'\u00A0'}{' '}
                                  About Developer</Link>
                         </NavItem>
                     </Nav>
