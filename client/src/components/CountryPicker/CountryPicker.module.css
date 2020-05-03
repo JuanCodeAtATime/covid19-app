@@ -1,9 +1,10 @@
 .formControl {
-    width: 40%;
+    width: 55%;
     margin-bottom: 30px !important;
     padding: 5px !important;
     background-color: #262626 !important;
     border-radius: 10px !important;   
+    font-size: 2rem !important;
     
 }
 
@@ -12,15 +13,30 @@
     border-radius: 10px !important;
     color: whitesmoke !important;
     font-weight: 800;
+    font-size: 2rem !important;
     padding-left: 5px !important;
     border-radius: 10px !important;
+    float: left !important;
 }
+
+/* .fontAI {
+font-size: 2rem !important;
+color: whitesmoke;
+display: inline-flex;
+} */
 
 .formItems {
     background-color: #262626 !important;    
     color: whitesmoke !important;
     font-weight: 300;    
     margin-left: 5px !important;
+}
+
+@media (max-width: 770px){
+    .formControl {
+        width: 100%;
+    }
+    
 }
 
 

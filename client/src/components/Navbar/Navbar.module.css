@@ -2,6 +2,13 @@
     font-weight: bold;
     color: whitesmoke;
     background-color: #262626 !important;
+    margin-bottom: 5rem;
+}
+
+#toggler {  
+    background-color: red !important;
+    font-size: 1rem;
+
 }
 
 .navLogo {

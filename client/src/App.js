@@ -1,9 +1,10 @@
 import React from 'react';
+// import { Route, Switch } from "react-router-dom";
 import { Cards, Chart, CountryPicker } from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
 import NavBar from './components/Navbar/Navbar';
-// import coronaImage from './images/image.png';
+import coronaImage from './images/image.jpg';
 
 class App extends React.Component {
     state = {
@@ -28,13 +29,14 @@ class App extends React.Component {
         return (
             <div>
                 <NavBar />
+                {/* <Switch>
+                <Route exact path="/" component={Auth(LandingPage, null)} /> */}
                 <div className={styles.container}>
-
-                    {/* <img className={styles.image} src={coronaImage} alt="Covid-19" /> */}
-                    <Cards data={data} />
                     <CountryPicker handleCountryChange={this.handleCountryChange} />
+                    <Cards data={data} />
                     <Chart data={data} country={country} />
                 </div>
+                {/* </Switch> */}
             </div>
         )
     }

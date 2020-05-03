@@ -15,14 +15,17 @@ const NavBar = (props) => {
                 <NavbarBrand href="/" className="mr-auto">
                     <FontAwesomeIcon className={styles.fontAI} icon={faGlobeAmericas} />
                     <span className={styles.navLogo}> GLOBAL COVID-19 TRACKER</span></NavbarBrand>
-                <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+                <NavbarToggler onClick={toggleNavbar} id={styles.toggler} className="mr-2" />
                 <Collapse isOpen={!collapsed} navbar>
                     <Nav navbar>
                         <NavItem>
-                            <NavLink href="/components/">Components</NavLink>
+                            <NavLink href="/components/" style={{ color: "whitesmoke" }}>Components</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                            <NavLink
+                                href="https://github.com/reactstrap/reactstrap"
+                                style={{ color: "whitesmoke" }}
+                            >About</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
