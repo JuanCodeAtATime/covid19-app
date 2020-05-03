@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { fetchDailyData } from '../../api';
 import { Line, Bar } from 'react-chartjs-2';
-
 import styles from './Chart.module.css'
-import CountryPicker from '../CountryPicker/CountryPicker';
+
 
 const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
     const [dailyData, setDailyData] = useState({});
@@ -47,9 +46,9 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
                         datasets: [{
                             label: 'People',
                             backgroundColor: [
-                                'rgba(66,139,202, 0.5)',
-                                'rgba(92,184,92, 0.5)',
-                                'rgba(217,83,79, 0.5)',
+                                'rgba(66,139,202, 0.65)',
+                                'rgba(92,184,92, 0.65)',
+                                'rgba(217,83,79, 0.65)',
                             ],
                             data: [confirmed.value, recovered.value, deaths.value]
                         }]

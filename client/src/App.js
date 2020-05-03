@@ -1,10 +1,11 @@
 import React from 'react';
-// import { Route, Switch } from "react-router-dom";
-import { Cards, Chart, CountryPicker } from './components';
+import { Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Cards, CountryPicker } from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
 import NavBar from './components/Navbar/Navbar';
-import coronaImage from './images/image.jpg';
+import ChartsPage from './pages/ChartsPage/ChartsPage';
 
 class App extends React.Component {
     state = {
@@ -28,15 +29,17 @@ class App extends React.Component {
         const { data, country } = this.state;
         return (
             <div>
-                <NavBar />
-                {/* <Switch>
-                <Route exact path="/" component={Auth(LandingPage, null)} /> */}
-                <div className={styles.container}>
-                    <CountryPicker handleCountryChange={this.handleCountryChange} />
-                    <Cards data={data} />
-                    <Chart data={data} country={country} />
-                </div>
-                {/* </Switch> */}
+                <Router>
+                    <NavBar />
+                    <Switch>
+                        <Route path="/chartspage" component={ChartsPage} />
+                        <div className={styles.container}>
+                            <CountryPicker handleCountryChange={this.handleCountryChange} />
+                            <Cards data={data} />
+
+                        </div>
+                    </Switch>
+                </Router>
             </div>
         )
     }

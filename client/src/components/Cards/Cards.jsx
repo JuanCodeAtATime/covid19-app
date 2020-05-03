@@ -15,7 +15,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             <Grid container spacing={3} justify="center">
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.infected)}>
                     <CardContent>
-                        <Typography style={{ fontWeight: "bold", color: "red", fontSize: "1.2rem" }} gutterBottom>Infected</Typography>
+                        <Typography style={{ fontWeight: "bold", color: "red", fontSize: "1.4rem" }} gutterBottom>Infected</Typography>
                         <Typography variant="h5">
                             <CountUp
                                 start={0}
@@ -32,7 +32,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
                     <CardContent>
-                        <Typography style={{ fontWeight: "bold", color: "red", fontSize: "1.2rem" }} gutterBottom>Recovered</Typography>
+                        <Typography style={{ fontWeight: "bold", color: "red", fontSize: "1.4rem" }} gutterBottom>Recovered</Typography>
                         <Typography variant="h5">
                             <CountUp
                                 start={0}
@@ -49,7 +49,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)}>
                     <CardContent>
-                        <Typography style={{ fontWeight: "bold", color: "red", fontSize: "1.2rem" }} gutterBottom>Deaths</Typography>
+                        <Typography style={{ fontWeight: "bold", color: "red", fontSize: "1.4rem" }} gutterBottom>Deaths</Typography>
                         <Typography variant="h5">
                             <CountUp
                                 start={0}

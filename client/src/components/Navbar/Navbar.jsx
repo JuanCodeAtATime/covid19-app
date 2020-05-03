@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
+import { faGlobeAmericas, faHome, faLaptopCode, faChartBar } from '@fortawesome/free-solid-svg-icons';
 import styles from './Navbar.module.css'
 
 const NavBar = (props) => {
@@ -19,13 +20,22 @@ const NavBar = (props) => {
                 <Collapse isOpen={!collapsed} navbar>
                     <Nav navbar>
                         <NavItem>
-                            <NavLink href="/components/" style={{ color: "whitesmoke" }}>Components</NavLink>
+                            <Link to="/" style={{ color: "whitesmoke" }} className={styles.navItems}>
+                                <FontAwesomeIcon icon={faHome} />{'  '}
+                                Home</Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink
+                            <Link to="/chartspage" style={{ color: "whitesmoke" }} className={styles.navItems}>
+                                <FontAwesomeIcon icon={faChartBar} />{'  '}{' '}
+                                By Country</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link
+                                className={styles.navItems}
                                 href="https://github.com/reactstrap/reactstrap"
-                                style={{ color: "whitesmoke" }}
-                            >About</NavLink>
+                                style={{ color: "whitesmoke" }}>
+                                <FontAwesomeIcon icon={faLaptopCode} />{' '}
+                                 About Developer</Link>
                         </NavItem>
                     </Nav>
                 </Collapse>

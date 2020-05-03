@@ -1,22 +1,25 @@
 .formControl {
-    width: 55%;
-    margin-bottom: 30px !important;
-    padding: 5px !important;
+    width: 80%;   
+    margin-bottom: 4rem !important;
+    padding: 10px !important;
     background-color: #262626 !important;
     border-radius: 10px !important;   
-    font-size: 2rem !important;
+    font-size: 1.2rem !important;
     
 }
-
+option.CountryPicker_formProps__1wxYX, option.CountryPicker_formItems__2l03t {
+    padding-left: 10px !important;
+}
 .formProps {
     background-color: #262626 !important;
     border-radius: 10px !important;
     color: whitesmoke !important;
     font-weight: 800;
-    font-size: 2rem !important;
+    font-size: 1.2rem !important;
     padding-left: 5px !important;
-    border-radius: 10px !important;
-    float: left !important;
+    border-radius: 10px !important;   
+    text-indent: 10px !important;
+    box-sizing: border-box;
 }
 
 /* .fontAI {
@@ -28,8 +31,8 @@ display: inline-flex;
 .formItems {
     background-color: #262626 !important;    
     color: whitesmoke !important;
-    font-weight: 300;    
-    margin-left: 5px !important;
+    font-weight: 300;  
+    padding-left: 10px !important;      
 }
 
 @media (max-width: 770px){
