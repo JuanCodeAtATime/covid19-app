@@ -21,12 +21,13 @@ Credits:  This project was possible due to the folks at JavaScript Mastery for t
 5. Lastly, run ```npm run start``` to launch in your local machine.
 
 ### Future Updates
-The desktop version runs fine locally and deployed.  However, I'm currently working to debug issues experienced on mobile devices.  On mobile browsers, the Charts page appears to be crashing.    
+I'm currently working to debug issues experienced on Safari and IE browsers and mobile devices.    
 
 ### Built With
 * **Programming Language:** JavaScript 
 * **Runtime Evironment/Sever:**  [Node.js](https://nodejs.org/en/)
 * **Libraries/Frameworks Used:** [React-Bootstrap](https://react-bootstrap.github.io/), [Material-UI](https://material-ui.com/), [Chart.js](https://www.chartjs.org/), [Reactstrap](https://reactstrap.github.io/)
+* **API:** https://covid19.mathdro.id
 
 ### Deployed Site
 [Click here](https://global-covid-19-tracker.herokuapp.com/) to visit deployed site.
