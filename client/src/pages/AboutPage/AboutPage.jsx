@@ -1,8 +1,4 @@
 import React from 'react';
-// import { Chart, CountryPicker } from '../../components';
-// import { fetchData } from '../../api';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import styles from './AboutPage.module.css';
 import image from './image.png'
 

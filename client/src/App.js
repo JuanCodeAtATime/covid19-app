@@ -31,15 +31,16 @@ class App extends React.Component {
                 <Router>
                     <NavBar />
                     <Switch>
+                        {/* <Route path="/" /> */}
                         <Route path="/chartspage" component={ChartsPage} />
                         <Route path="/aboutDeveloper" component={AboutPage} />
                         <div className={styles.container}>
                             <LandingPagePicker handleLandingChange={this.handleLandingChange} />
                             <Cards data={data} />
                         </div>
-
+                        <Route path="/">Home
+                        </Route>
                     </Switch>
-
                 </Router>
                 <Footer />
             </div>
