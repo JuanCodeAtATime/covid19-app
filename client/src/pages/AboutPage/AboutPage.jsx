@@ -20,8 +20,8 @@ class AboutPage extends React.Component {
                         </p>
 
                         <p>
-                            I've been a coding away since I graduated my coding program.  Somehow, it just hasn't feel right
-                            building apps that weren't making an impact during this <b style={{ color: "red" }}>global epidemic</b>.
+                            I've been a coding away since I graduated my coding program.  Somehow, it just hasn't felt right
+                            building apps that weren't making an impact during this <b style={{ color: "red" }}>global pandemic</b>.
                         </p>
                         <p>
                             Whether this app raises a bit of awareness or helps
