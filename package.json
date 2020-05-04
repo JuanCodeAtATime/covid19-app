@@ -1,0 +1,34 @@
+{
+  "name": "covid19-app",
+  "version": "1.0.0",
+  "description": "Initial build of my covid-19 app.",
+  "engines": {
+    "npm": "6.13.4",
+    "node": "10.20.1"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "backend": "nodemon server/server.js",
+    "frontend": "npm run front --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\"",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanCodeAtATime/covid19-app.git"
+  },
+  "author": "Juan Rivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanCodeAtATime/covid19-app/issues"
+  },
+  "homepage": "https://github.com/JuanCodeAtATime/covid19-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}

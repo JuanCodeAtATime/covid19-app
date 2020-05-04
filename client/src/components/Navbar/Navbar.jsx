@@ -30,10 +30,7 @@ const NavBar = (props) => {
                                 Data By Country</Link>
                         </NavItem>
                         <NavItem>
-                            <Link
-                                to="/aboutDeveloper"
-                                className={styles.navItems}
-                                style={{ color: "whitesmoke" }}>
+                            <Link to="/aboutdeveloper" style={{ color: "whitesmoke" }} className={styles.navItems} >
                                 <FontAwesomeIcon icon={faLaptopCode} />  {'\u00A0'}{' '}
                                  About Developer</Link>
                         </NavItem>

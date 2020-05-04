@@ -33,7 +33,7 @@ class App extends React.Component {
                     <Switch>
                         {/* <Route path="/" /> */}
                         <Route path="/chartspage" component={ChartsPage} />
-                        <Route path="/aboutDeveloper" component={AboutPage} />
+                        <Route path="/aboutdeveloper" component={AboutPage} />
                         <div className={styles.container}>
                             <LandingPagePicker handleLandingChange={this.handleLandingChange} />
                             <Cards data={data} />

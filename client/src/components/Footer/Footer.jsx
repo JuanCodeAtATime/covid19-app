@@ -7,7 +7,8 @@ function Footer() {
         <div style={{
             height: '50px', backgroundColor: "#262626", width: "100%",
             textAlign: "center",
-            padding: "1rem"
+            padding: "1rem",
+            bottom: "0"
 
         }}>
             <b style={{
