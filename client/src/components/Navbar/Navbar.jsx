@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobeAmericas, faHome, faLaptopCode, faChartBar } from '@fortawesome/free-solid-svg-icons';
+import { faGlobeAmericas, faHome, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import styles from './Navbar.module.css'
 
 const NavBar = (props) => {
@@ -24,11 +24,11 @@ const NavBar = (props) => {
                                 <FontAwesomeIcon icon={faHome} /> {'\u00A0'}{' '}
                                 Home</Link>
                         </NavItem>
-                        <NavItem>
+                        {/* <NavItem>
                             <Link to="/chartspage" style={{ color: "whitesmoke" }} className={styles.navItems}>
                                 <FontAwesomeIcon icon={faChartBar} /> {'\u00A0'}{' '}
                                 Data By Country</Link>
-                        </NavItem>
+                        </NavItem> */}
                         <NavItem>
                             <Link to="/aboutdeveloper" style={{ color: "whitesmoke" }} className={styles.navItems} >
                                 <FontAwesomeIcon icon={faLaptopCode} />  {'\u00A0'}{' '}

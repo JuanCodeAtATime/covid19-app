@@ -34,5 +34,9 @@ color: whitesmoke !important;
     .card {
         margin: 2% 0 !important;
     }
+
+    .container {
+        margin: 1rem;
+        }
     
 }

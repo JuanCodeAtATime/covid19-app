@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Cards, LandingPagePicker, NavBar, Footer } from './components';
+import { Cards, CountryPicker, NavBar, Footer, Chart } from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
 import AboutPage from './pages/AboutPage/AboutPage';
-import ChartsPage from './pages/ChartsPage/ChartsPage';
+// import ChartsPage from './pages/ChartsPage/ChartsPage';
 
 class App extends React.Component {
     state = {
@@ -17,7 +17,7 @@ class App extends React.Component {
         this.setState({ data: fetchedData })
     }
 
-    handleLandingChange = async (country) => {
+    handleCountryChange = async (country) => {
         const fetchedData = await fetchData(country)
         this.setState({ data: fetchedData, country: country });
     }
@@ -25,18 +25,21 @@ class App extends React.Component {
 
 
     render() {
-        const { data } = this.state;
+        const { data, country } = this.state;
         return (
             <div>
                 <Router>
                     <NavBar />
                     <Switch>
                         {/* <Route path="/" /> */}
-                        <Route path="/chartspage" component={ChartsPage} />
+                        {/* <Route path="/chartspage" component={ChartsPage} /> */}
                         <Route path="/aboutdeveloper" component={AboutPage} />
                         <div className={styles.container}>
-                            <LandingPagePicker handleLandingChange={this.handleLandingChange} />
+                            <CountryPicker handleCountryChange={this.handleCountryChange} />
                             <Cards data={data} />
+                            <Chart data={data} country={country} />
+
+
                         </div>
                         <Route path="/">Home
                         </Route>
