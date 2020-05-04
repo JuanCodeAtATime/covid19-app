@@ -8,7 +8,11 @@ function Footer() {
             height: '50px', backgroundColor: "#262626", width: "100%",
             textAlign: "center",
             padding: "1rem",
-            bottom: "0"
+            bottom: "0",
+            position: "relative",
+            left: "0",
+            right: "0"
+
 
         }}>
             <b style={{
