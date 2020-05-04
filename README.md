@@ -20,6 +20,8 @@ Credits:  This project was possible due to the folks at JavaScript Mastery for t
 4. Go back to root directory with ``` cd .. ```.
 5. Lastly, run ```npm run start``` to launch in your local machine.
 
+### Future Updates
+The desktop version runs fine locally and deployed.  However, I'm currently working to debug issues experienced on mobile devices.  On mobile browsers, the Charts page appears to be crashing.    
 
 ### Built With
 * **Programming Language:** JavaScript 
@@ -27,6 +29,6 @@ Credits:  This project was possible due to the folks at JavaScript Mastery for t
 * **Libraries/Frameworks Used:** [React-Bootstrap](https://react-bootstrap.github.io/), [Material-UI](https://material-ui.com/), [Chart.js](https://www.chartjs.org/), [Reactstrap](https://reactstrap.github.io/)
 
 ### Deployed Site
-[Click here](https://famcloud.herokuapp.com) to visit deployed site.
+[Click here](https://global-covid-19-tracker.herokuapp.com/) to visit deployed site.
 
 
