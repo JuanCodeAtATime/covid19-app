@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Cards, CountryPicker } from './components';
+import { Cards, LandingPagePicker, NavBar, Footer } from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
-import NavBar from './components/Navbar/Navbar';
+import AboutPage from './pages/AboutPage/AboutPage';
 import ChartsPage from './pages/ChartsPage/ChartsPage';
 
 class App extends React.Component {
@@ -17,10 +17,10 @@ class App extends React.Component {
         this.setState({ data: fetchedData })
     }
 
-    // handleCountryChange = async (country) => {
-    //     const fetchedData = await fetchData(country)
-    //     this.setState({ data: fetchedData, country: country });
-    // }
+    handleLandingChange = async (country) => {
+        const fetchedData = await fetchData(country)
+        this.setState({ data: fetchedData, country: country });
+    }
 
 
 
@@ -32,13 +32,16 @@ class App extends React.Component {
                     <NavBar />
                     <Switch>
                         <Route path="/chartspage" component={ChartsPage} />
+                        <Route path="/aboutDeveloper" component={AboutPage} />
                         <div className={styles.container}>
-                            {/* <CountryPicker handleCountryChange={this.handleCountryChange} /> */}
+                            <LandingPagePicker handleLandingChange={this.handleLandingChange} />
                             <Cards data={data} />
-
                         </div>
+
                     </Switch>
+
                 </Router>
+                <Footer />
             </div>
         )
     }

@@ -31,8 +31,8 @@ const NavBar = (props) => {
                         </NavItem>
                         <NavItem>
                             <Link
+                                to="/aboutDeveloper"
                                 className={styles.navItems}
-                                href="https://github.com/reactstrap/reactstrap"
                                 style={{ color: "whitesmoke" }}>
                                 <FontAwesomeIcon icon={faLaptopCode} />  {'\u00A0'}{' '}
                                  About Developer</Link>

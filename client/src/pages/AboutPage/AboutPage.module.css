@@ -1,0 +1,28 @@
+.container {    
+width: 75%;
+align-content: center;
+background-color:#262626;
+padding: 2rem;
+margin: auto 4rem;
+margin-bottom: 3rem;
+color: whitesmoke;
+border-radius: 10px;
+}
+
+img {
+width: 10rem;
+height: 10rem;
+border-radius: 10px;
+}
+
+h1 {
+font-size: 2rem;
+
+}
+
+.aboutPara {
+text-align: left;
+align-content: flex-start;
+justify-content: flex-end;
+float: left;
+}

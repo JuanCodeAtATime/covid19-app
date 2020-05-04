@@ -5,25 +5,25 @@ import styles from './CountryPicker.module.css';
 // import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { fetchCountries } from '../../api';
 
-const CountryPicker = ({ handleCountryChange }) => {
-    const [fetchedCountries, setFetchedCounties] = useState([]);
+const LandingPagePicker = ({ handleLandingChange }) => {
+    const [fetchedLandingCountries, setFetchedLandingCountries] = useState([]);
 
     useEffect(() => {
         const fetchAPI = async () => {
-            setFetchedCounties(await fetchCountries());
+            setFetchedLandingCountries(await fetchCountries());
         }
         fetchAPI();
-    }, [setFetchedCounties]);
+    }, [setFetchedLandingCountries]);
 
     return (
         <FormControl className={styles.formControl}>
 
             <NativeSelect className={styles.formProps} style={{ fontWeight: "bold" }}
-                defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
+                defaultValue="" onChange={(e) => handleLandingChange(e.target.value)}>
                 {/* <div><FontAwesomeIcon icon={faSearch} className={styles.fontAI} /></div> */}
                 <option value="" className={styles.formProps}>
-                    Search By Country</option>
-                {fetchedCountries.map((country, i) =>
+                    Global Numbers</option>
+                {fetchedLandingCountries.map((country, i) =>
                     <option key={i} value={country}
                         className={styles.formItems}
                         style={{ paddingLeft: "10px !important" }}
@@ -34,4 +34,4 @@ const CountryPicker = ({ handleCountryChange }) => {
     )
 }
 
-export default CountryPicker;
+export default LandingPagePicker;
