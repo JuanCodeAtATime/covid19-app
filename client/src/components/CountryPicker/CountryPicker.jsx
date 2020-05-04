@@ -22,7 +22,7 @@ const CountryPicker = ({ handleCountryChange }) => {
                 defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>
                 {/* <div><FontAwesomeIcon icon={faSearch} className={styles.fontAI} /></div> */}
                 <option value="" className={styles.formProps}>
-                    Search By Country (Global Default)</option>
+                    Global Numbers</option>
                 {fetchedCountries.map((country, i) =>
                     <option key={i} value={country}
                         className={styles.formItems}

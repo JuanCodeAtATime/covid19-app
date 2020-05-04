@@ -1,6 +1,6 @@
 .formControl {
     width: 60%;   
-    margin-bottom: 4rem !important;
+    margin-bottom: 2.5rem !important;
     padding: 10px !important;
     background-color: #262626 !important;
     border-radius: 10px !important;   
@@ -22,11 +22,11 @@ option.CountryPicker_formProps__1wxYX, option.CountryPicker_formItems__2l03t {
     box-sizing: border-box;
 }
 
-/* .fontAI {
-font-size: 2rem !important;
+.fontAI {
+font-size: 1rem !important;
 color: whitesmoke;
 display: inline-flex;
-} */
+}
 
 .formItems {
     background-color: #262626 !important;    

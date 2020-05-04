@@ -5,6 +5,9 @@ import { Cards, CountryPicker, NavBar, Footer, Chart } from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
 import AboutPage from './pages/AboutPage/AboutPage';
+import { Provider } from "react-redux";
+import store from "./store";
+
 // import ChartsPage from './pages/ChartsPage/ChartsPage';
 
 class App extends React.Component {
@@ -27,26 +30,26 @@ class App extends React.Component {
     render() {
         const { data, country } = this.state;
         return (
-            <div>
+            <Provider store={store}>
                 <Router>
-                    <NavBar />
-                    <Switch>
-                        {/* <Route path="/" /> */}
-                        {/* <Route path="/chartspage" component={ChartsPage} /> */}
-                        <Route path="/aboutdeveloper" component={AboutPage} />
-                        <div className={styles.container}>
-                            <CountryPicker handleCountryChange={this.handleCountryChange} />
-                            <Cards data={data} />
-                            <Chart data={data} country={country} />
-
-
-                        </div>
-                        <Route path="/">Home
+                    <div>
+                        <NavBar />
+                        <Switch>
+                            {/* <Route path="/" /> */}
+                            {/* <Route path="/chartspage" component={ChartsPage} /> */}
+                            <Route path="/aboutdeveloper" component={AboutPage} />
+                            <div className={styles.container}>
+                                <CountryPicker handleCountryChange={this.handleCountryChange} />
+                                <Cards data={data} />
+                                <Chart data={data} country={country} />
+                            </div>
+                            <Route path="/">Home
                         </Route>
-                    </Switch>
+                        </Switch>
+                    </div>
                 </Router>
                 <Footer />
-            </div>
+            </Provider>
         )
     }
 }
