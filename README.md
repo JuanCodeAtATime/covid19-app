@@ -7,7 +7,7 @@
 *****
 
 ## Overview
-I've been a coding away since I graduated my coding program in March 2020. Somehow, it just hasn't felt right building apps that weren't making an impact during this global pandemic.
+I've been coding away since I graduated my coding program in March 2020. Somehow, it just hasn't felt right building apps that weren't making an impact during this global pandemic.
 
 Whether this app raises a bit of awareness or helps someone somewhere make a more informed decision, I hope it serves a greater purpose.
 
