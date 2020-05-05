@@ -10,7 +10,7 @@ class AboutPage extends React.Component {
             <div className={styles.container}>
                 <div className="row">
                     <div className="col-md-6 col-s-12 col-xs-12">
-                        <img src={image} />
+                        <img src={image} alt="headshot of Juan" />
                         <h1>Meet Juan!</h1>
 
                     </div>

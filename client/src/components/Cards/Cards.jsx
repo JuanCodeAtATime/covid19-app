@@ -1,8 +1,7 @@
 import React from 'react';
-import { Card, CardContent, Typography, Grid, StylesProvider } from '@material-ui/core';
+import { Card, CardContent, Typography, Grid } from '@material-ui/core';
 import CountUp from 'react-countup';
 import styles from './Cards.module.css';
-import CountryPicker from '../CountryPicker/CountryPicker';
 import cx from 'classnames';
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {

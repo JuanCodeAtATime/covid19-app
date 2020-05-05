@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Route, Switch } from "react-router-dom";
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Cards, CountryPicker, NavBar, Footer, Chart } from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
 import AboutPage from './pages/AboutPage/AboutPage';
-import { Provider } from "react-redux";
-import store from "./store";
+
 
 // import ChartsPage from './pages/ChartsPage/ChartsPage';
 
@@ -30,7 +29,7 @@ class App extends React.Component {
     render() {
         const { data, country } = this.state;
         return (
-            <Provider store={store}>
+            <Suspense fallback={(<div>Loading...</div>)}>
                 <Router>
                     <div>
                         <NavBar />
@@ -47,9 +46,9 @@ class App extends React.Component {
                         </Route>
                         </Switch>
                     </div>
+                    <Footer />
                 </Router>
-                <Footer />
-            </Provider>
+            </Suspense>
         )
     }
 }
