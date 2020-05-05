@@ -21,7 +21,7 @@ Credits:  This project was possible due to the folks at JavaScript Mastery for t
 5. Lastly, run ```npm run start``` to launch in your local machine.
 
 ### Future Updates
-I'm currently working to debug issues experienced on Safari and IE browsers and mobile devices.    
+Cross-browser compatibilty:  As of 5/5/2020, app is currently Chrome and IE11 browser-compatible.  Working to debug issues experienced on Safari iOS platforms.
 
 ### Built With
 * **Programming Language:** JavaScript 
