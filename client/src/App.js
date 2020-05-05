@@ -14,10 +14,26 @@ class App extends React.Component {
         data: {}
     }
 
+    // async componentDidMount() {
+    //     const fetchedData = await fetchData();
+    //     this.setState({ data: fetchedData })
+    // }
+
     async componentDidMount() {
-        const fetchedData = await fetchData();
-        this.setState({ data: fetchedData })
+        try {
+            setInterval(async () => {
+                const fetchedData = await fetchData();
+
+                this.setState({
+                    data: fetchedData
+                })
+            }, 30000);
+        } catch (e) {
+            console.log(e);
+        }
     }
+
+
 
     handleCountryChange = async (country) => {
         const fetchedData = await fetchData(country)
