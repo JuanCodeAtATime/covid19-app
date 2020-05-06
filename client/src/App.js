@@ -30,7 +30,7 @@ class App extends React.Component {
                 const data = await fetchData();
 
                 this.setState({ data })
-            }, 0);
+            }, 5);
         } catch (e) {
             console.log(e);
         }
