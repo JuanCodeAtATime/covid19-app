@@ -17,26 +17,24 @@ class App extends React.Component {
         country: '',
     }
 
-    async componentDidMount() {
-        const data = await fetchData();
-        this.setState({ data })
-    }
-
-    //This makes an API call every 30 seconds as a quick 
-    //   fix to solve Safari infinite API call/crash issue
     // async componentDidMount() {
-    //     try {
-    //         setInterval(async () => {
-    //             const fetchedData = await fetchData();
-
-    //             this.setState({
-    //                 data: fetchedData
-    //             })
-    //         }, 1000);
-    //     } catch (e) {
-    //         console.log(e);
-    //     }
+    //     const data = await fetchData();
+    //     this.setState({ data })
     // }
+
+    // Above lifecycle works on....Below makes an API call every 0 seconds as a temporary solution 
+    //  for Safari Browser crash caused by infinite API calls
+    async componentDidMount() {
+        try {
+            setTimeout(async () => {
+                const data = await fetchData();
+
+                this.setState({ data })
+            }, 0);
+        } catch (e) {
+            console.log(e);
+        }
+    }
 
 
 

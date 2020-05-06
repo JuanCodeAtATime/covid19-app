@@ -20,7 +20,9 @@ function Footer() {
                 borderRadius: "5px",
                 paddingLeft: "10px",
                 paddingRight: "10px",
-                marginTop: "2rem"
+                marginTop: "2rem",
+                bottom: "0"
+
             }}>
 
                 <span style={{ color: "white" }}>
