@@ -13,12 +13,13 @@ import AboutPage from './pages/AboutPage/AboutPage';
 
 class App extends React.Component {
     state = {
-        data: {}
+        data: {},
+        country: '',
     }
 
     async componentDidMount() {
-        const fetchedData = await fetchData();
-        this.setState({ data: fetchedData })
+        const data = await fetchData();
+        this.setState({ data })
     }
 
     //This makes an API call every 30 seconds as a quick 
@@ -40,8 +41,8 @@ class App extends React.Component {
 
 
     handleCountryChange = async (country) => {
-        const fetchedData = await fetchData(country)
-        this.setState({ data: fetchedData, country: country });
+        const data = await fetchData(country)
+        this.setState({ data, country: country });
     }
 
 
@@ -52,7 +53,7 @@ class App extends React.Component {
             <Suspense
                 fallback={(<div><FontAwesomeIcon icon={faSpinner} /></div>)}>
                 <Router>
-                    <div>
+                    <React.Fragment>
                         <NavBar />
                         <Switch>
                             {/* <Route path="/" /> */}
@@ -66,7 +67,7 @@ class App extends React.Component {
                             <Route path="/">Home
                         </Route>
                         </Switch>
-                    </div>
+                    </React.Fragment>
                     <Footer />
                 </Router>
             </Suspense>
