@@ -1,5 +1,5 @@
 ## Global COVID-19 Tracker
- ![#f03c15](As of 5/6/2020, API source is down. Rendering broken screen.  Needs new API source) 
+```dif - As of 5/6/2020, API source is down. Rendering broken screen.  Needs new API source. ```
 - Developer: Juan Rivera
 - Date: May 4, 2020
 
